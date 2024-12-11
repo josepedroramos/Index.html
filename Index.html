@@ -1,3 +1,28 @@
+<style>
+  * {
+    margin: 0;
+  }
+  h1, p, button {
+    text-align: center;
+  }
+  p {
+    font-size: 80px;
+  }
+</style>
 <h1>Contador</h1>
 <p>0</p>
-<button>aumentar</button>
+<p>
+  <button onclick="aument()">aumentar</button>
+</p>
+<script>
+  var número = 0
+  
+  function aumentar(){
+    número = número + 1
+    mostrar()
+  }
+  
+function mostrar() {
+    document.getElementById("num").innertext = numero
+}
+</script>
